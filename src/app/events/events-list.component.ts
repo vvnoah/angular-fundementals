@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
     template: `
         <div>
             <h1>Upcoming Events</h1>
+            <hr>
+            <h2>{{event.name}}</h2>
         </div>
     `
 })
