@@ -10,6 +10,7 @@ import { EventService } from './events/shared/event.service';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from '../routes';
+import { CreateEventComponent } from './events/create-events.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ROUTES } from '../routes';
     NavBarComponent,
     EventsListComponent,
     EventThumbnailComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule,
