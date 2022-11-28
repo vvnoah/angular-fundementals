@@ -15,13 +15,13 @@ import { EventService } from './shared/event.service';
     `
 })
 export class EventsListComponent implements OnInit {
-    events:any[] = [];
+    events:any = [];
 
     constructor(private eventService:EventService){
 
     }
     
     ngOnInit(){
-      this.events = this.eventService.getEvents();
+      this.events = this.eventService.getEvents().subscribe(events => {this.events = events});
     }
 }
